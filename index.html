@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gemini Chatbot</title>
+  <style>
+    body {
+      background: #f9f9fb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin: 0;
+    }
+    .chatbox {
+      width: 100%;
+      max-width: 600px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      overflow-y: auto;
+      height: 400px;
+      margin-bottom: 20px;
+    }
+    .message {
+      margin: 10px 0;
+    }
+    .user { text-align: right; color: #0077cc; }
+    .bot { text-align: left; color: #444; }
+    input {
+      padding: 10px;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Gemini Chatbot 🤖</h2>
+  <div class="chatbox" id="chatbox"></div>
+  <input type="text" id="user-input" placeholder="Ask something..." />
+  <script src="script.js"></script>
+</body>
+</html>
